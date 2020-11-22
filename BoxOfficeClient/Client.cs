@@ -1,13 +1,26 @@
+// File: Client.cs
+// Author: Claire Murray
+// Client code for purchasing tickets
 using System;
 using System.Net.Sockets;
 
 namespace BoxOfficeClient
 {
+    
+    /// <summary>
+    /// Client: Creates a TCP client that connects to the admin server
+    /// </summary>
     public static class Client
     {
+        /// <summary>
+        /// Entry point
+        /// Connects to the server and continually reads and sends messages until an end signal is read
+        /// </summary>
         public static void Main() {
             try {
-                TcpClient tcpClient = new TcpClient();
+                
+                //Connect to the server
+                var tcpClient = new TcpClient();
                 Console.WriteLine("Connecting.....");
             
                 tcpClient.Connect("127.00.00.1",8888);
@@ -17,12 +30,13 @@ namespace BoxOfficeClient
                 var stm = tcpClient.GetStream();
                 var buff = new byte[tcpClient.ReceiveBufferSize];
 
+                //Alternate Reading and writing messages until an exit signal is read in
                 while (true)
                 {
 
                     var k = stm.Read(buff);
                     var str = "";
-                    for (int i=0;i<k;i++)
+                    for (var i=0; i<k; i++)
                     {
                         Console.Write(Convert.ToChar(buff[i]));
                         str += Convert.ToChar(buff[i]);
@@ -34,6 +48,8 @@ namespace BoxOfficeClient
                     stm.Write(encoded);
            
                 }
+                
+                //Manage resources and wrap up
 
                 tcpClient.Close();
             }

@@ -1,18 +1,31 @@
+// File: Screen.cs
+// Author: Claire Murray
+// Part of the Model code, to represent a screen that shows a film
 using System;
 
 namespace BoxOffice.Server
 {
+    /// <summary>
+    /// Screen: Represents a Screen in the theatre with a Title and a certain number of available tickets
+    /// </summary>
     public class Screen
     {
+        /// <summary> Lock to protect the critical region (purchasing tickets) /// </summary>
         private readonly object _lock = new object();
+        
+        /// <summary> The title of the film being shown at this screen  /// </summary>
         public string Title { get; }
+        
+        /// <summary> Total number of tickets remaining for this film /// </summary>
         public int Tickets { get; private set; }
+        
+        /// <summary> Total number of tickets that have been purchased for this film /// </summary>
         private int Purchased { get; set; }
 
         /// <summary>
-        /// 
+        /// Screen constructor
         /// </summary>
-        /// <param name="title"></param>
+        /// <param name="title"> The title of the film being shown at this screen </param>
         public Screen(string title)
         {
             this.Title = title;
@@ -21,10 +34,11 @@ namespace BoxOffice.Server
         }
 
         /// <summary>
-        /// 
+        /// Determines equality between two Screens
+        /// Two Screens are Equal if they have the same title
         /// </summary>
-        /// <param name="other"></param>
-        /// <returns></returns>
+        /// <param name="other"> Screen that is being compared to the calling Screen object </param>
+        /// <returns> True, if the screens have the same Title, False otherwise </returns>
         public bool Equals(Screen other)
         {
             return String.Equals(Title, other.Title);
@@ -32,10 +46,11 @@ namespace BoxOffice.Server
 
 
         /// <summary>
-        ///
+        /// "Purchase" tickets for this screen
         /// Precondition: Number of tickets is > 0
         /// </summary>
-        /// <param name="numTickets"></param>
+        /// <param name="numTickets"> The number of tickets being purchased </param>
+        /// <returns> The number of tickets successfully purchased </returns>
         public int Purchase(int numTickets)
         {
             lock (_lock)
@@ -57,7 +72,7 @@ namespace BoxOffice.Server
         }
 
         /// <summary>
-        /// 
+        /// Print out a summary of how this screen performed
         /// </summary>
         public void PrintSummary()
         {

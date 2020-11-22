@@ -1,51 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="da301ffc-7e35-4ab1-8149-80e473a7025d" name="Default Changelist" comment="Testing Repo">
+    <list default="true" id="da301ffc-7e35-4ab1-8149-80e473a7025d" name="Default Changelist" comment="BG Files and stuff">
       <changelist_data name="" email="" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/Server/Admin.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/BoxOfficeClient.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/Client.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/bin/Debug/netcoreapp3.1/BoxOfficeClient.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/bin/Debug/netcoreapp3.1/BoxOfficeClient.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/bin/Debug/netcoreapp3.1/BoxOfficeClient.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/bin/Debug/netcoreapp3.1/BoxOfficeClient.runtimeconfig.dev.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/bin/Debug/netcoreapp3.1/BoxOfficeClient.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/BoxOfficeClient.csproj.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/BoxOfficeClient.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/BoxOfficeClient.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/BoxOfficeClient.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BoxOffice/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BoxOffice/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BoxOffice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BoxOffice/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoxOffice.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOffice.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoxOffice/Admin.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoxOffice/BoxOffice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOffice/Server/BoxOffice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoxOffice/Client.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoxOffice/Screen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOffice/Server/Screen.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxOffice/Server/Admin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOffice/Server/Admin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxOffice/Server/BoxOffice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOffice/Server/BoxOffice.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxOffice/Server/Screen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOffice/Server/Screen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxOfficeClient/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOfficeClient/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/BoxOfficeClient/obj/Debug/netcoreapp3.1/BoxOfficeClient.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,10 +48,10 @@
         <option value="$PROJECT_DIR$/BoxOffice/Admin.cs" />
         <option value="$PROJECT_DIR$/BoxOffice/Client/Client.cs" />
         <option value="$PROJECT_DIR$/BoxOfficeClient/Program.cs" />
+        <option value="$PROJECT_DIR$/BoxOffice/Server/Screen.cs" />
         <option value="$PROJECT_DIR$/BoxOfficeClient/Client.cs" />
         <option value="$PROJECT_DIR$/BoxOffice/Server/Admin.cs" />
         <option value="$PROJECT_DIR$/BoxOffice/Server/BoxOffice.cs" />
-        <option value="$PROJECT_DIR$/BoxOffice/Server/Screen.cs" />
       </list>
     </option>
   </component>
@@ -188,7 +151,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605749254677</updated>
       <workItem from="1605749256948" duration="2960000" />
-      <workItem from="1605806839006" duration="23424000" />
+      <workItem from="1605806839006" duration="24508000" />
+      <workItem from="1606071657365" duration="6700000" />
     </task>
     <task id="LOCAL-00001" summary="Testing Repo">
       <created>1605754294392</created>
@@ -197,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605754294393</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BG Files and stuff">
+      <created>1606016858731</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606016858732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +181,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -218,29 +191,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Testing Repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing Repo" />
+    <MESSAGE value="BG Files and stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="BG Files and stuff" />
   </component>
   <component name="WindowStateProjectService">
     <state x="68" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605903290300">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="68" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.812@0.23.1440.812" timestamp="1605903290300" />
-    <state width="1166" height="209" key="GridCell.Tab.0.bottom" timestamp="1606016445485">
+    <state width="1166" height="209" key="GridCell.Tab.0.bottom" timestamp="1606017858895">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1166" height="209" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1606016445485" />
-    <state width="1166" height="209" key="GridCell.Tab.0.center" timestamp="1606016445484">
+    <state width="1166" height="209" key="GridCell.Tab.0.bottom/0.23.1440.812@0.23.1440.812" timestamp="1606017858895" />
+    <state width="1166" height="209" key="GridCell.Tab.0.center" timestamp="1606017858894">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1166" height="209" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1606016445484" />
-    <state width="1166" height="209" key="GridCell.Tab.0.left" timestamp="1606016445483">
+    <state width="1166" height="209" key="GridCell.Tab.0.center/0.23.1440.812@0.23.1440.812" timestamp="1606017858894" />
+    <state width="1166" height="209" key="GridCell.Tab.0.left" timestamp="1606017858894">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1166" height="209" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1606016445483" />
-    <state width="1166" height="209" key="GridCell.Tab.0.right" timestamp="1606016445484">
+    <state width="1166" height="209" key="GridCell.Tab.0.left/0.23.1440.812@0.23.1440.812" timestamp="1606017858894" />
+    <state width="1166" height="209" key="GridCell.Tab.0.right" timestamp="1606017858894">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state width="1166" height="209" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1606016445484" />
+    <state width="1166" height="209" key="GridCell.Tab.0.right/0.23.1440.812@0.23.1440.812" timestamp="1606017858894" />
     <state x="436" y="160" key="Rider.ProjectTemplateDialog.Size" timestamp="1605902657823">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
@@ -249,9 +223,9 @@
       <screen x="0" y="23" width="1440" height="812" />
     </state>
     <state x="583" y="140" key="VCS.ChangeListViewerDialog/0.23.1440.812@0.23.1440.812" timestamp="1605996870265" />
-    <state x="420" y="169" key="Vcs.Push.Dialog.v2" timestamp="1605754300787">
+    <state x="420" y="169" key="Vcs.Push.Dialog.v2" timestamp="1606016861636">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
-    <state x="420" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.812@0.23.1440.812" timestamp="1605754300787" />
+    <state x="420" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.812@0.23.1440.812" timestamp="1606016861636" />
   </component>
 </project>
