@@ -1,6 +1,7 @@
 using System;
+using System.Net.Sockets;
 
-namespace BoxOffice
+namespace BoxOffice.Server
 {
     public class BoxOffice
     {
@@ -50,8 +51,7 @@ namespace BoxOffice
                 Console.WriteLine("-------------------------------");
                 for (int i = 0; i < 5; i++)
                 {
-                    if(!IsNull(i+1))
-                        Console.WriteLine("Screen {0}: {1}", i+1, _screens[i].Title);
+                    Console.WriteLine("Screen {0}: {1}", i+1, _screens[i].Title);
                 }
                 Console.WriteLine("-------------------------------");
             }
@@ -74,7 +74,7 @@ namespace BoxOffice
         }
 
         private Schedule Sched { get; }
-        private static bool Open { get; set; }
+        public bool Open { get; private set; }
         private int Purchased { get; set; }
 
         public BoxOffice()
@@ -115,13 +115,11 @@ namespace BoxOffice
                     else
                     {
                         Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-5");
-                        return;
                     }
                 }
                 else
                 {
                     Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-5");
-                    return;
                 }
             }
             else
@@ -153,7 +151,6 @@ namespace BoxOffice
                 else
                 {
                     Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-5");
-                    return;
                 }
             }
             else
@@ -181,8 +178,8 @@ namespace BoxOffice
                 }
                 else
                 {
-                    Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-5");
-                    return;
+                    Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-5"); 
+                    
                 }
             }
             else
@@ -196,38 +193,60 @@ namespace BoxOffice
             Open = true;
         }
 
-        public void PurchaseTickets()
+
+        private void SendMsg(NetworkStream s, string msg)
+        {
+            var encoded = System.Text.Encoding.ASCII.GetBytes(msg);
+            s.Write(encoded);
+        }
+
+        private string ReceiveMsg(NetworkStream s)
+        {
+            var buff = new byte[1024];
+            var k = s.Read(buff);
+            var ans = "";
+            for (int i = 0; i < k; i++)
+            {
+                ans += Convert.ToChar(buff[i]);
+            }
+
+            return ans;
+        }
+        
+        public void PurchaseTickets(NetworkStream s)
         {
             if (Open)
             {
-                Sched.PrintSchedule();
-                Console.WriteLine("Please enter a screen number:");
-                var screenA = Console.ReadLine();
+                SendMsg(s,"Please enter a screen number (1-5):");
+                var screenA = ReceiveMsg(s);
                 if (Int32.TryParse(screenA, out var screenNumberA))
                 {
                     if (screenNumberA < 1 || screenNumberA > 5)
                     {
-                        Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-5");
+                        SendMsg(s,"Invalid numeral entered. Please enter a numeral in range 1-5");
                         return;
                     }
 
                     if (Sched.IsNull(screenNumberA))
                     {
-                        Console.WriteLine("Currently no showings at screen {0}", screenNumberA);
+                        SendMsg(s,"Currently no showings at given screen");
                         return;
                     }
 
                     var screen = Sched.GetScreen(screenNumberA);
                     var title = screen.Title;
-                    var remaining = screen.Tickets;
-                    Console.WriteLine("{0} currently has {1} ticket(s) available", title, remaining);
-                    Console.WriteLine("Please enter the number of tickets you would like to purchase:");
-                    var tickets = Console.ReadLine();
+                    var remaining = screen.Tickets.ToString();
+                    
+                    var msg = title + " currently has " + remaining + " ticket(s) available (>>)";
+                    SendMsg(s, msg);
+                    SendMsg(s,"Please enter the number of tickets you would like to purchase:");
+                    var tickets = ReceiveMsg(s);
                     if (Int32.TryParse(tickets, out var numTickets))
                     {
-                        if (numTickets < 1 )
+                        if (numTickets < 1  || numTickets > screen.Tickets)
                         {
-                            Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-{0}", remaining);
+                            msg = "Invalid numeral entered. Please enter a numeral in range 1-" + remaining;
+                            SendMsg(s, msg);
                             return;
                         }
 
@@ -236,29 +255,33 @@ namespace BoxOffice
                     }
                     else
                     {
-                        Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-{0}", remaining);
-                        return;
+                        msg = "Invalid numeral entered. Please enter a numeral in range 1-" + remaining;
+                        SendMsg(s, msg);
                     }
 
                 }
                 else
                 {
-                    Console.WriteLine("Invalid numeral entered. Please enter a numeral in range 1-5");
-                    return;
+                    SendMsg(s, "Invalid numeral entered. Please enter a numeral in range 1-5");
                 }
             }
             else
             {
-                Console.WriteLine("Sales are not yet open, please try again later");
+                SendMsg(s,"Sales are not yet open, please try again later");
             }
         }
 
         public void EndDay()
         {
             Open = false;
-            Console.WriteLine("Todays Sales:");
+            Console.WriteLine("Today's Sales:");
             Console.WriteLine("Total tickets purchased: {0}", Purchased);
             Sched.PrintResults();
+        }
+
+        public void Print()
+        {
+            Sched.PrintSchedule();
         }
         
     }

@@ -1,0 +1,12 @@
+/Users/claire/Desktop/BoxOffice/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.deps.json
+/Users/claire/Desktop/BoxOffice/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.runtimeconfig.json
+/Users/claire/Desktop/BoxOffice/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.runtimeconfig.dev.json
+/Users/claire/Desktop/BoxOffice/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.dll
+/Users/claire/Desktop/BoxOffice/BoxOffice/bin/Debug/netcoreapp3.1/BoxOffice.pdb
+/Users/claire/Desktop/BoxOffice/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.csprojAssemblyReference.cache
+/Users/claire/Desktop/BoxOffice/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.AssemblyInfoInputs.cache
+/Users/claire/Desktop/BoxOffice/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.AssemblyInfo.cs
+/Users/claire/Desktop/BoxOffice/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.csproj.CoreCompileInputs.cache
+/Users/claire/Desktop/BoxOffice/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.dll
+/Users/claire/Desktop/BoxOffice/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.pdb
+/Users/claire/Desktop/BoxOffice/BoxOffice/obj/Debug/netcoreapp3.1/BoxOffice.genruntimeconfig.cache

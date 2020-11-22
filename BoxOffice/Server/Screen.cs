@@ -1,6 +1,6 @@
 using System;
 
-namespace BoxOffice
+namespace BoxOffice.Server
 {
     public class Screen
     {
@@ -9,6 +9,10 @@ namespace BoxOffice
         public int Tickets { get; private set; }
         private int Purchased { get; set; }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="title"></param>
         public Screen(string title)
         {
             this.Title = title;
@@ -16,20 +20,17 @@ namespace BoxOffice
             this.Purchased = 0;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="other"></param>
+        /// <returns></returns>
         public bool Equals(Screen other)
         {
             return String.Equals(Title, other.Title);
         }
 
-        public void PrintInfo()
-        {
-            Console.WriteLine("----------------------------");
-            Console.WriteLine("    Currently Showing: {0}", Title);
-            Console.WriteLine("    Tickets Available: {0}", Tickets);
-            Console.WriteLine("-----------------------------");
-        }
 
-        
         /// <summary>
         ///
         /// Precondition: Number of tickets is > 0
@@ -55,6 +56,9 @@ namespace BoxOffice
             }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void PrintSummary()
         {
             Console.WriteLine("Movie Shown: {0}", Title);
